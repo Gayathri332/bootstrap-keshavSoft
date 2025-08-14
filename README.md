@@ -19,3 +19,13 @@ This is a responsive website for a digital creative agency called PixelForge.
 3. **Contact Page** (`contact.html`) - Contact form and information
 
 ## Folder Structure
+project-folder/
+├── index.html
+├── about.html
+├── contact.html
+├── README.md
+└── assets/
+├── css/
+│ └── custom.css
+├── js/
+│ └── script.js
