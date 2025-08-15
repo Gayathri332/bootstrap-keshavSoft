@@ -1,7 +1,7 @@
 {
   "name": "bootstrap-keshavsoft",
   "version": "2.0.0",
-  "description": "PixelForge Creative Digital Agency Website - Task 2 Implementation",
+  "description": "PixelForge Creative Digital Agency Website - Implementation",
   "type": "module",
   "scripts": {
     "dev": "vite",
