@@ -1,26 +1,50 @@
 {
   "name": "bootstrap-keshavsoft",
-  "version": "1.0.0",
-  "description": "Exploring Bootstrap 5's official examples and components - PixelForge Creative Agency Website",
-  "main": "index.js",
+  "version": "2.0.0",
+  "description": "PixelForge Creative Digital Agency Website - Task 2 Implementation",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "serve": "vite preview --port 5173",
+    "build-static": "vite build && node scripts/generate-static.js",
+    "lint": "eslint assets/js --ext .js",
+    "format": "prettier --write \"**/*.{js,css,html,json}\"",
+    "optimize": "vite build --mode production && node scripts/optimize.js"
   },
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "eslint": "^8.57.0",
+    "prettier": "^3.0.0",
+    "@vitejs/plugin-legacy": "^5.0.0",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "@fortawesome/fontawesome-free": "^6.4.0"
+  },
+  "keywords": [
+    "vite",
+    "jamstack",
+    "static-site",
+    "digital-agency",
+    "web-development",
+    "template-engine"
+  ],
+  "author": "PixelForge Team",
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Gayathri332/bootstrap-keshavSoft.git"
+    "url": "https://github.com/pixelforge/website"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Gayathri332/bootstrap-keshavSoft/issues"
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
   },
-  "homepage": "https://github.com/Gayathri332/bootstrap-keshavSoft#readme",
-  "keywords": [],
-  "dependencies": {
-    "bootstrap": "^5.3.7",
-    "vite": "^7.1.2"
-  }
+  "browserslist": [
+    "defaults",
+    "not IE 11"
+  ]
 }

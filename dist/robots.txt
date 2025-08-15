@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pixelforge.com/sitemap.xml
+
+# Block access to admin areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.git/
+
+# Allow all crawlers to access public content
+Allow: /assets/
+Allow: /images/

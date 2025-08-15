@@ -4,13 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PixelForge - Creative Digital Agency</title>
+    <meta name="description" content="Creating amazing digital experiences that inspire and engage users worldwide.">
+    <meta name="keywords" content="web development, mobile apps, UI/UX design, digital agency">
+    <meta property="og:title" content="PixelForge - Creative Digital Agency">
+    <meta property="og:description" content="Creating amazing digital experiences that inspire and engage users worldwide.">
+    <meta property="og:type" content="website">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <script type="module" crossorigin src="/bootstrap-keshavSoft/assets/index-DFWUJ9A5.js"></script>
-  <link rel="stylesheet" crossorigin href="/bootstrap-keshavSoft/assets/index-CqSYs_M2.css">
+    
+    <!-- JSON-LD structured data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "PixelForge",
+      "description": "Creative Digital Agency specializing in web development, mobile apps, and UI/UX design",
+      "url": "https://pixelforge.com",
+      "logo": "https://pixelforge.com/logo.png",
+      "foundingDate": "2020",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Design Street",
+        "addressLocality": "Creative City",
+        "postalCode": "CC 12345"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-555-123-4567",
+        "contactType": "Customer Service"
+      }
+    }
+    </script>
+  <script type="module" crossorigin src="/assets/script-D4-sAiyU.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/script-DhXHj82P.css">
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- Loading Animation -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <i class="fas fa-cube fa-spin fa-3x text-primary mb-3"></i>
+            <h4>Loading PixelForge...</h4>
+        </div>
+    </div>
+
+    <!-- Navigation - Will be populated dynamically -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-custom">
         <div class="container">
             <a class="navbar-brand" href="index.html">
@@ -21,21 +59,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
+                    <!-- Navigation items will be populated by ContentManager -->
                 </ul>
             </div>
         </div>
@@ -46,23 +70,39 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <div class="hero-content">
+                    <div class="hero-content fade-in">
                         <h1 class="hero-title">Create Amazing Digital Experiences</h1>
                         <p class="hero-subtitle">We craft stunning websites, mobile apps, and digital solutions that drive results and inspire users.</p>
-                        <a href="contact.html" class="btn btn-gradient">Start Your Project</a>
+                        <div class="hero-buttons">
+                            <a href="contact.html" class="btn btn-gradient me-3">Start Your Project</a>
+                            <a href="#portfolio" class="btn btn-outline-light">View Our Work</a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6 position-relative">
-                    <div class="floating-element">
-                        <i class="fas fa-rocket fa-2x text-white mb-3"></i>
-                        <h5 class="text-white">Fast Performance</h5>
-                    </div>
-                    <div class="floating-element">
-                        <i class="fas fa-mobile-alt fa-2x text-white mb-3"></i>
-                        <h5 class="text-white">Mobile First</h5>
+                    <div class="hero-animation">
+                        <div class="floating-element" data-aos="fade-up" data-aos-delay="100">
+                            <i class="fas fa-rocket fa-2x text-white mb-3"></i>
+                            <h5 class="text-white">Fast Performance</h5>
+                        </div>
+                        <div class="floating-element" data-aos="fade-up" data-aos-delay="200">
+                            <i class="fas fa-mobile-alt fa-2x text-white mb-3"></i>
+                            <h5 class="text-white">Mobile First</h5>
+                        </div>
+                        <div class="floating-element" data-aos="fade-up" data-aos-delay="300">
+                            <i class="fas fa-shield-alt fa-2x text-white mb-3"></i>
+                            <h5 class="text-white">Secure & Reliable</h5>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+        
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator">
+            <a href="#services" class="scroll-down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
         </div>
     </section>
 
@@ -76,33 +116,7 @@
                 </div>
             </div>
             <div class="row g-4">
-                <div class="col-lg-4">
-                    <div class="service-card fade-in">
-                        <div class="service-icon">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <h4 class="mb-3">Web Development</h4>
-                        <p class="text-muted">Custom websites and web applications built with modern technologies and best practices.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="service-card fade-in">
-                        <div class="service-icon">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                        <h4 class="mb-3">Mobile Apps</h4>
-                        <p class="text-muted">Native and cross-platform mobile applications that provide exceptional user experiences.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="service-card fade-in">
-                        <div class="service-icon">
-                            <i class="fas fa-paint-brush"></i>
-                        </div>
-                        <h4 class="mb-3">UI/UX Design</h4>
-                        <p class="text-muted">Beautiful and intuitive designs that engage users and drive conversions.</p>
-                    </div>
-                </div>
+                <!-- Services will be populated dynamically by ContentManager -->
             </div>
         </div>
     </section>
@@ -116,43 +130,21 @@
                     <p class="lead text-muted fade-in">Check out some of our recent projects and success stories.</p>
                 </div>
             </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6">
-                    <div class="portfolio-item fade-in">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="E-commerce Platform" class="img-fluid">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-content">
-                                <h4>E-commerce Platform</h4>
-                                <p>Modern online shopping experience</p>
-                                <a href="#" class="btn btn-outline-light">View Project</a>
-                            </div>
-                        </div>
+            
+            <!-- Portfolio Filter -->
+            <div class="row mb-4">
+                <div class="col-12 text-center">
+                    <div class="portfolio-filter fade-in">
+                        <button class="btn btn-outline-primary active" data-filter="all">All</button>
+                        <button class="btn btn-outline-primary" data-filter="web">Web Development</button>
+                        <button class="btn btn-outline-primary" data-filter="mobile">Mobile Apps</button>
+                        <button class="btn btn-outline-primary" data-filter="design">UI/UX Design</button>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="portfolio-item fade-in">
-                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Mobile App" class="img-fluid">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-content">
-                                <h4>Health & Fitness App</h4>
-                                <p>Cross-platform mobile application</p>
-                                <a href="#" class="btn btn-outline-light">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="portfolio-item fade-in">
-                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="SaaS Dashboard" class="img-fluid">
-                        <div class="portfolio-overlay">
-                            <div class="portfolio-content">
-                                <h4>SaaS Dashboard</h4>
-                                <p>Analytics and data visualization</p>
-                                <a href="#" class="btn btn-outline-light">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            </div>
+            
+            <div class="row g-4" id="portfolio-grid">
+                <!-- Portfolio items will be populated dynamically by ContentManager -->
             </div>
         </div>
     </section>
@@ -163,19 +155,19 @@
             <div class="row">
                 <div class="col-lg-3 col-6">
                     <div class="stat-item fade-in">
-                        <div class="stat-number">150+</div>
+                        <div class="stat-number" data-target="150">0</div>
                         <p>Projects Completed</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-6">
                     <div class="stat-item fade-in">
-                        <div class="stat-number">50+</div>
+                        <div class="stat-number" data-target="50">0</div>
                         <p>Happy Clients</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-6">
                     <div class="stat-item fade-in">
-                        <div class="stat-number">5+</div>
+                        <div class="stat-number" data-target="5">0</div>
                         <p>Years Experience</p>
                     </div>
                 </div>
@@ -183,6 +175,68 @@
                     <div class="stat-item fade-in">
                         <div class="stat-number">24/7</div>
                         <p>Support Available</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="display-4 fw-bold mb-4 fade-in">What Our Clients Say</h2>
+                    <p class="lead text-muted fade-in">Don't just take our word for it - here's what our clients have to say about working with us.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4 fade-in">
+                    <div class="testimonial-card">
+                        <div class="stars mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"PixelForge transformed our digital presence completely. Their attention to detail and innovative approach exceeded our expectations."</p>
+                        <div class="client-info">
+                            <strong>Jennifer Smith</strong>
+                            <small class="text-muted">CEO, TechStart Inc.</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-in">
+                    <div class="testimonial-card">
+                        <div class="stars mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Professional, creative, and delivered on time. The mobile app they built for us has been a game-changer for our business."</p>
+                        <div class="client-info">
+                            <strong>Marcus Johnson</strong>
+                            <small class="text-muted">Founder, FitLife App</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-in">
+                    <div class="testimonial-card">
+                        <div class="stars mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Outstanding design and development work. They truly understand how to create user experiences that convert visitors into customers."</p>
+                        <div class="client-info">
+                            <strong>Lisa Anderson</strong>
+                            <small class="text-muted">Marketing Director, ShopEasy</small>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -223,6 +277,22 @@
         </div>
     </section>
 
+    <!-- CTA Section -->
+    <section class="cta-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center fade-in">
+                    <h2 class="display-5 fw-bold text-white mb-4">Ready to Start Your Project?</h2>
+                    <p class="lead text-white opacity-75 mb-4">Let's work together to create something amazing that will help your business grow and succeed in the digital world.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-gradient btn-lg me-3">Get Started Today</a>
+                        <a href="#portfolio" class="btn btn-outline-light btn-lg">View Our Portfolio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer-section">
         <div class="container">
@@ -242,17 +312,17 @@
                 <div class="col-lg-2 col-md-6 mb-4">
                     <h5 class="mb-4">Services</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-light opacity-75 text-decoration-none">Web Development</a></li>
-                        <li><a href="#" class="text-light opacity-75 text-decoration-none">Mobile Apps</a></li>
-                        <li><a href="#" class="text-light opacity-75 text-decoration-none">UI/UX Design</a></li>
-                        <li><a href="#" class="text-light opacity-75 text-decoration-none">Consulting</a></li>
+                        <li><a href="#services" class="text-light opacity-75 text-decoration-none">Web Development</a></li>
+                        <li><a href="#services" class="text-light opacity-75 text-decoration-none">Mobile Apps</a></li>
+                        <li><a href="#services" class="text-light opacity-75 text-decoration-none">UI/UX Design</a></li>
+                        <li><a href="#services" class="text-light opacity-75 text-decoration-none">Consulting</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-2 col-md-6 mb-4">
                     <h5 class="mb-4">Company</h5>
                     <ul class="list-unstyled">
                         <li><a href="about.html" class="text-light opacity-75 text-decoration-none">About</a></li>
-                        <li><a href="index.html#portfolio" class="text-light opacity-75 text-decoration-none">Portfolio</a></li>
+                        <li><a href="#portfolio" class="text-light opacity-75 text-decoration-none">Portfolio</a></li>
                         <li><a href="#" class="text-light opacity-75 text-decoration-none">Careers</a></li>
                         <li><a href="contact.html" class="text-light opacity-75 text-decoration-none">Contact</a></li>
                     </ul>
@@ -261,15 +331,15 @@
                     <h5 class="mb-4">Contact Info</h5>
                     <div class="d-flex align-items-center mb-3">
                         <i class="fas fa-map-marker-alt me-3 text-primary"></i>
-                        <span class="text-light opacity-75">123 Design Street, Creative City, CC 12345</span>
+                        <span class="text-light opacity-75" data-contact="location">123 Design Street, Creative City, CC 12345</span>
                     </div>
                     <div class="d-flex align-items-center mb-3">
                         <i class="fas fa-phone me-3 text-primary"></i>
-                        <span class="text-light opacity-75">+1 (555) 123-4567</span>
+                        <span class="text-light opacity-75" data-contact="phone">+1 (555) 123-4567</span>
                     </div>
                     <div class="d-flex align-items-center">
                         <i class="fas fa-envelope me-3 text-primary"></i>
-                        <span class="text-light opacity-75">hello@pixelforge.com</span>
+                        <span class="text-light opacity-75" data-contact="email">hello@pixelforge.com</span>
                     </div>
                 </div>
             </div>
@@ -286,7 +356,71 @@
         </div>
     </footer>
 
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom Scripts -->
+    
+    <!-- Enhanced functionality script -->
+    <script>
+        // Loading screen
+        window.addEventListener('load', function() {
+            const loadingScreen = document.getElementById('loading-screen');
+            if (loadingScreen) {
+                loadingScreen.style.opacity = '0';
+                setTimeout(() => {
+                    loadingScreen.style.display = 'none';
+                }, 500);
+            }
+        });
+
+        // Back to top functionality
+        window.addEventListener('scroll', function() {
+            const backToTop = document.getElementById('backToTop');
+            if (window.pageYOffset > 300) {
+                backToTop.classList.add('show');
+            } else {
+                backToTop.classList.remove('show');
+            }
+        });
+
+        document.getElementById('backToTop').addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Portfolio filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.portfolio-filter button');
+            const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+
+                    const filter = this.getAttribute('data-filter');
+                    
+                    portfolioItems.forEach(item => {
+                        if (filter === 'all' || item.classList.contains(filter)) {
+                            item.style.display = 'block';
+                            item.style.opacity = '1';
+                        } else {
+                            item.style.opacity = '0';
+                            setTimeout(() => {
+                                item.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+        });
+    </script>
 </body>
 </html>
