@@ -1,0 +1,26 @@
+{
+  "name": "bootstrap-keshavsoft",
+  "version": "1.0.0",
+  "description": "Exploring Bootstrap 5's official examples and components - PixelForge Creative Agency Website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gayathri332/bootstrap-keshavSoft.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gayathri332/bootstrap-keshavSoft/issues"
+  },
+  "homepage": "https://github.com/Gayathri332/bootstrap-keshavSoft#readme",
+  "keywords": [],
+  "dependencies": {
+    "bootstrap": "^5.3.7",
+    "vite": "^7.1.2"
+  }
+}
