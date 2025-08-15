@@ -1,8 +1,8 @@
-# PixelForge Website - Task 2 Implementation
+# PixelForge Website - Implementation
 
-## 🚀 Task 2 Overview
+## 🚀 Project Overview
 
-This project implements **Task 2** using modern **Jamstack architecture** with **Vite** as the build tool, incorporating dynamic content management, static site generation, and PWA capabilities.
+PixelForge Website is a modern, responsive web application built using a Jamstack approach with **Vite** as the build tool. It combines static site generation with dynamic content management, ensuring high performance, scalability, and a seamless user experience. The site is enhanced with Progressive Web App (PWA) features for offline access, smooth navigation, and optimized loading speeds.
 
 ## 📋 Technologies Used
 
